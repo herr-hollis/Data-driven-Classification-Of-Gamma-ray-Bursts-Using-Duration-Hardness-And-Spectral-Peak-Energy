@@ -40,12 +40,12 @@ $T_{90}$ is the interval containing 5–95% of the burst fluence (50–300 keV).
 
 $E_{\rm peak}$ is retained only for Band or Comptonised fits with $10 < E_{\rm peak} < 10^4$ keV and relative uncertainty below 100%. All features are log-transformed and standardised to zero mean and unit variance.
 
-**Gaussian mixture model.** The standardised feature vector $\mathbf z$ is modelled as
 
+**Gaussian mixture model.** The standardised feature vector $\mathbf z$ is modelled as
+ 
 ```math
 p(\mathbf z)=\sum_{k=1}^{K}\pi_k\,\mathcal N(\mathbf z\mid\boldsymbol\mu_k,\boldsymbol\Sigma_k)\qquad(2)
 ```
-
  
 with full covariance matrices, fitted by expectation–maximisation.
  
@@ -54,8 +54,7 @@ with full covariance matrices, fitted by expectation–maximisation.
 ```math
 \mathrm{BIC}=-2\ln\hat L+q\ln n\qquad(3)
 ```
-
-
+ 
 where $\hat L$ is the maximised likelihood, $q$ the number of free parameters and $n$ the sample size. Because BIC can favour extra components when clusters are non-Gaussian, the $K=2$ versus $K=3$ comparison is also tested with a parametric bootstrap of the likelihood-ratio statistic $\Lambda = 2(\ln\hat L_3 - \ln\hat L_2)$.
 
 **Density clustering.** HDBSCAN, which makes no Gaussian assumption, is applied to the standardised features and to a two-dimensional UMAP embedding. Robustness is assessed across 10 independent UMAP random seeds.
