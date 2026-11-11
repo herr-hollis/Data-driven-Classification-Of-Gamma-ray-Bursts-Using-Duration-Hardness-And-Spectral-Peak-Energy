@@ -113,9 +113,13 @@ Unsupervised learning on *Fermi* GBM prompt-emission data recovers the classical
 ## References
 
 [1] C. Kouveliotou *et al.*, "Identification of two classes of gamma-ray bursts," *Astrophys. J.*, vol. 413, pp. L101–L104, 1993, doi: [10.1086/186969](https://doi.org/10.1086/186969).
+ 
 [2] T. Ahumada *et al.*, "Discovery and confirmation of the shortest gamma-ray burst from a collapsar," *Nat. Astron.*, vol. 5, pp. 917–927, 2021, doi: [10.1038/s41550-021-01428-7](https://doi.org/10.1038/s41550-021-01428-7).
+ 
 [3] J. C. Rastinejad *et al.*, "A kilonova following a long-duration gamma-ray burst at 350 Mpc," *Nature*, vol. 612, pp. 223–227, 2022, doi: [10.1038/s41586-022-05390-w](https://doi.org/10.1038/s41586-022-05390-w).
+ 
 [4] C. L. Steinhardt, W. J. Mann, V. Rusakov, and C. K. Jespersen, "Classification of BATSE, Swift, and Fermi gamma-ray bursts from prompt emission alone," *Astrophys. J.*, vol. 945, Art. no. 67, 2023, doi: [10.3847/1538-4357/acb999](https://doi.org/10.3847/1538-4357/acb999).
+ 
 [5] S. Poolakkil *et al.*, "The Fermi-GBM gamma-ray burst spectral catalog: 10 yr of data," *Astrophys. J.*, vol. 913, Art. no. 60, 2021, doi: [10.3847/1538-4357/abf24d](https://doi.org/10.3847/1538-4357/abf24d).
 
 ## Acknowledgements
