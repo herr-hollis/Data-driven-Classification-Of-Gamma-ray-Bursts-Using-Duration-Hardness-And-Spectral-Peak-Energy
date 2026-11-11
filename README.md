@@ -42,31 +42,23 @@ $E_{\rm peak}$ is retained only for Band or Comptonised fits with $10 < E_{\rm p
 
 **Gaussian mixture model.** The standardised feature vector $\mathbf z$ is modelled as
 
-$$
-p(\mathbf z)=\sum_{k=1}^{K}\pi_k\,\mathcal N(\mathbf z\mid\boldsymbol\mu_k,\boldsymbol\Sigma_k)
-\tag{2}
-$$
-
+```math
+p(\mathbf z)=\sum_{k=1}^{K}\pi_k\,\mathcal N(\mathbf z\mid\boldsymbol\mu_k,\boldsymbol\Sigma_k)\qquad(2)
+```
+ 
 with full covariance matrices, fitted by expectation–maximisation.
-
+ 
 **Model selection.** The number of components $K$ is chosen by minimising
-
-$$
-\mathrm{BIC}=-2\ln\hat L+q\ln n
-\tag{3}
-$$
+ 
+```math
+\mathrm{BIC}=-2\ln\hat L+q\ln n\qquad(3)
+```
 
 where $\hat L$ is the maximised likelihood, $q$ the number of free parameters and $n$ the sample size. Because BIC can favour extra components when clusters are non-Gaussian, the $K=2$ versus $K=3$ comparison is also tested with a parametric bootstrap of the likelihood-ratio statistic $\Lambda = 2(\ln\hat L_3 - \ln\hat L_2)$.
 
 **Density clustering.** HDBSCAN, which makes no Gaussian assumption, is applied to the standardised features and to a two-dimensional UMAP embedding. Robustness is assessed across 10 independent UMAP random seeds.
 
 **Validation.** Cluster assignments are compared with five bursts whose progenitors are known from kilonova or supernova associations.
-
-```
-Fermi GBM catalogue → extract T90, HR, Epeak → quality cuts, log10, standardise
-        → { Gaussian mixture | HDBSCAN + UMAP } → BIC + bootstrap + seed stability
-        → validate against known progenitors
-```
 
 ## 3. Results
 
