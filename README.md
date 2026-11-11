@@ -33,10 +33,10 @@ $T_{90}$ is the interval containing 5–95% of the burst fluence (50–300 keV).
 
 **Features.** The hardness ratio is defined as the ratio of energy flux in the 50–300 keV and 10–50 keV bands, integrated over the best-fit photon spectrum $N(E)$:
 
-$$
-\mathrm{HR}=\frac{\int_{50}^{300}E\,N(E)\,dE}{\int_{10}^{50}E\,N(E)\,dE}
-\tag{1}
-$$
+```math
+\mathrm{HR}=\frac{\int_{50}^{300}E\,N(E)\,dE}{\int_{10}^{50}E\,N(E)\,dE}\qquad(1)
+```
+
 
 $E_{\rm peak}$ is retained only for Band or Comptonised fits with $10 < E_{\rm peak} < 10^4$ keV and relative uncertainty below 100%. All features are log-transformed and standardised to zero mean and unit variance.
 
@@ -45,6 +45,7 @@ $E_{\rm peak}$ is retained only for Band or Comptonised fits with $10 < E_{\rm p
 ```math
 p(\mathbf z)=\sum_{k=1}^{K}\pi_k\,\mathcal N(\mathbf z\mid\boldsymbol\mu_k,\boldsymbol\Sigma_k)\qquad(2)
 ```
+
  
 with full covariance matrices, fitted by expectation–maximisation.
  
@@ -53,6 +54,7 @@ with full covariance matrices, fitted by expectation–maximisation.
 ```math
 \mathrm{BIC}=-2\ln\hat L+q\ln n\qquad(3)
 ```
+
 
 where $\hat L$ is the maximised likelihood, $q$ the number of free parameters and $n$ the sample size. Because BIC can favour extra components when clusters are non-Gaussian, the $K=2$ versus $K=3$ comparison is also tested with a parametric bootstrap of the likelihood-ratio statistic $\Lambda = 2(\ln\hat L_3 - \ln\hat L_2)$.
 
