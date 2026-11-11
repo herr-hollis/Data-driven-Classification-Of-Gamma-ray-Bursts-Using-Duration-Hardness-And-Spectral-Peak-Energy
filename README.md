@@ -14,7 +14,7 @@ Gamma-ray bursts (GRBs) are the most luminous explosions in the Universe. Their 
 
 We classify 3,759 bursts from the *Fermi* Gamma-ray Burst Monitor (GBM) catalogue **without labels**, using three prompt-emission observables: duration ($T_{90}$), spectral hardness ratio (HR) and spectral peak energy ($E_{\rm peak}$). We apply Gaussian mixture models (GMM) and density-based clustering (HDBSCAN, both directly and on a UMAP embedding). The number of classes is selected with the Bayesian information criterion (BIC), a parametric bootstrap likelihood-ratio test and seed-stability checks. The clusters are then validated against bursts with independently established progenitors.
 
-Two dominant classes are recovered. They agree with the 2 s boundary for **97.5%** of bursts, and we find **no robust evidence for a third class**. The additional structure resides within the long population, which divides by spectral hardness. Including $E_{\rm peak}$ correctly reclassifies the collapsar GRB 200826A. However, merger-origin long bursts such as GRB 211211A remain indistinguishable from ordinary long GRBs in this feature space.
+Two dominant classes are recovered. They agree with the 2 s boundary for **97.5%** of bursts and we find **no robust evidence for a third class**. The additional structure resides within the long population, which divides by spectral hardness. Including $E_{\rm peak}$ correctly reclassifies the collapsar GRB 200826A. However, merger-origin long bursts such as GRB 211211A remain indistinguishable from ordinary long GRBs in this feature space.
 
 ---
 
