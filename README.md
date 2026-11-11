@@ -106,7 +106,7 @@ Unsupervised learning on *Fermi* GBM prompt-emission data recovers the classical
 | `grb_outputs/` | Notebook outputs: figures, CSV/Excel data and `results.json` |
 | `Analysed and Plotted Graph.opju` | OriginPro project used for the poster figures |
 | `*.png` | Poster figures (Figures 1–4) |
-| `Hollis Francis_Poster_IAU ECRWG Conference 2…` | Final conference poster |
+| `Hollis_Kiren_Poster_IAU ECRWG Conference 2…` | Final conference poster |
 
 **Dependencies:** `numpy`, `pandas`, `scipy`, `scikit-learn`, `astropy`, `hdbscan`, `umap-learn`, `matplotlib`, `openpyxl`. 
 
